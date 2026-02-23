@@ -1,0 +1,8 @@
+Brand name : Elvora
+
+project : ract
+
+animation : GSAP
+
+link for main cover-video : https://files.vecteezy.com/system/resource/files/4871646/y2021m03w2set2__11_.mov?response-content-disposition=attachment%3Bfilename%3Dvecteezy_front-view-pour-the-chocolate-sauce-on-top-the-ice-cream_4871646.mov&Expires=1771832209&Signature=UV6nsVMsZZFnQxLKzWLJI56UgY20Qgf2ZdW2P58tUUPp1h0LtLYj4IVdTuxFNiFOowTBmfCRPzF8zoC8mwsFqek0GrHZKbapEswnwwy6mu18gDCuU8A8rOO3mby575hpaEoyDncrVSfxrwZemFHLxsiTeoFlW33MPGwa2hr-98VPBaHqnkFaU0Dy~WlaosiJVuK9WAyTRB2hCn5ZrDNEgV4rfldUWlh4GGOfHVt1JThY8Y72Dv54Jr3zbX8C5HAUcsm6Yew-c3YpwFZglksTf0fuiYo9yqi9iRPCKnmBj-3KpTThD6HR5IUne0j5E3l90c7pwz4ntVwa7xSxjBb95A__&Key-Pair-Id=K3714PYOSHV3HB
+
