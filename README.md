@@ -1,12 +1,93 @@
-# React + Vite
+# 🍨 ELVORA — Premium Ice Cream Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Elvora** is a luxury ice-cream brand website built using **React**, designed to deliver a fully immersive and cinematic digital experience.
 
-Currently, two official plugins are available:
+This project focuses on smooth animations, elegant typography, and a premium visual identity — creating a modern, high-end brand presence online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### 📸 Project Preview
+<p align="left">
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/abfd1670c3d0f46672b20e3f886ef512209981d5/public/ElvoraHomePageImage.png" width="80%" />
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## ✨ About The Project
+
+Elvora is not just a website — it's an experience.
+
+The platform combines:
+
+- Smooth scroll-based interactions  
+- Advanced motion animations  
+- Cinematic hero sections  
+- Premium minimal UI design  
+- Modern responsive layout  
+
+The goal was to build a visually engaging, high-performance, animation-driven brand website that feels luxurious and immersive.
+
+---
+
+## 🚀 Tech Stack
+
+- ⚛️ React.js  
+- 🎞 Framer Motion  
+- 🎬 GSAP (GreenSock)  
+- 📜 ScrollTrigger (GSAP Plugin)  
+- 🎨 Tailwind CSS  
+- 💅 Styled Components  
+- ⚡ Vite  
+
+---
+
+## 🎥 Features
+
+- Cinematic video hero section  
+- Smooth animated typography  
+- Scroll-triggered transitions  
+- Fully responsive design  
+- Premium transparent navigation  
+- Immersive user interaction  
+- Clean and modern UI  
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+https://github.com/IBsai2112/Elvora-Icecream.git
+```
+```bash
+cd Elvora-Icecream
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+## 🎯 Design Philosophy
+Elvora embraces:
+- Minimalism
+- Elegance
+- Smooth motion
+- Brand storytelling through animation
+Every element is crafted to feel intentional, premium, and visually refined.
+
+
+## 🌟 Future Improvements
+- E-commerce integration
+- Product showcase section
+- Dynamic flavor management
+- Performance optimization
+- SEO enhancement
+
+## 👨‍💻 Author
+
+Developed by **Sainjal Kalnekar**  
+Full-Stack Developer with a strong focus on interactive UI, modern web technologies, and performance-optimized digital experiences.
