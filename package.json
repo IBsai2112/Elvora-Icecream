@@ -1,5 +1,5 @@
 {
-  "name": "elvora",
+  "name": "elvora2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lottiefiles/dotlottie-react": "^0.18.2",
-    "framer-motion": "^12.34.3",
+    "@tailwindcss/vite": "^4.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "styled-components": "^6.3.11"
+    "react-router-dom": "^6.30.3",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

@@ -1,30 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import Loader from "./components/Loader";
-import Home from "./sections/Home";
+import React from 'react'
 
 const App = () => {
-  const [appLoading, setAppLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAppLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <>
-      {/* Loader First */}
-      <AnimatePresence mode="wait">
-        {appLoading && <Loader key="loader" />}
-      </AnimatePresence>
+    <div className="text-white">App</div>
+  )
+}
 
-      {/* After Loader → Show Home */}
-      {!appLoading && <Home />}
-    </>
-  );
-};
-
-export default App;
+export default App
