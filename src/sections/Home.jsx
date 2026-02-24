@@ -1,7 +1,16 @@
 import React from 'react'
+import CoverVideo from '../components/coverVideo';
+import Navbar from '../components/navbar';
 
-export const home = () => {
+const home = () => {
   return (
-    <div>home</div>
+    <div>
+        <div className='h-screen w-screen bg-red-500'>
+            <CoverVideo />
+            <Navbar />
+        </div>
+    </div>
   )
 }
+
+export default home;
