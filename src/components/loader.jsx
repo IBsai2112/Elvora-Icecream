@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import IcecreamLoader from "../assets/Icecream_loader.gif"; // 👈 import local gif
+import IcecreamLoader from "../assets/Icecream_loader.gif"; // 👈 importing local gif
 
 const Container = styled(motion.div)`
   position: fixed;
