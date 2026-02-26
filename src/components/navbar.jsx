@@ -17,8 +17,9 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-8 text-sm uppercase">
           <li className="cursor-pointer hover:opacity-70 transition">Home</li>
           <li className="cursor-pointer hover:opacity-70 transition">Flavors</li>
+          <li className="cursor-pointer hover:opacity-70 transition">Cart</li>
           <li className="cursor-pointer hover:opacity-70 transition">About</li>
-          <li className="cursor-pointer hover:opacity-70 transition">Contact</li>
+          <li className="cursor-pointer hover:opacity-70 transition">Account</li>
         </ul>
 
         {/* Mobile Hamburger */}
