@@ -18,15 +18,21 @@ const Navbar = () => {
           <li className="cursor-pointer hover:opacity-70 transition">
             <Link to="/">Home</Link>
           </li>
-          <li className="cursor-pointer hover:opacity-70 transition">Flavors</li>
-          
+          <li className="cursor-pointer hover:opacity-70 transition">
+            <Link to="/Flavors">Flavors</Link>
+          </li>
+
           {/* 2. CHANGE THIS TO A LINK */}
           <li className="cursor-pointer hover:text-pink-400 transition font-bold">
             <Link to="/cart">Cart</Link>
           </li>
           
-          <li className="cursor-pointer hover:opacity-70 transition">About</li>
-          <li className="cursor-pointer hover:opacity-70 transition">Account</li>
+          <li className="cursor-pointer hover:opacity-70 transition">
+            <Link to="/About">About</Link>
+          </li>
+          <li className="cursor-pointer hover:opacity-70 transition">
+            <Link to="/Account">Account</Link>
+          </li>
         </ul>
 
         {/* Mobile Hamburger */}
