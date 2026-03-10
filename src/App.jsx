@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
 import Home from './sections/home'
 import Loader from "./components/Loader"
+import CartPage from './sections/cart'
+import Navbar from './components/navbar'
 
 const App = () => {
 
@@ -25,6 +27,7 @@ const App = () => {
       {!appLoading && (
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       )}
     </>

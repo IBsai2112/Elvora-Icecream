@@ -6,4 +6,4 @@ const AllProduct = () => {
   )
 }
 
-export default AllProduct
+export default AllProduct 
