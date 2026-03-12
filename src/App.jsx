@@ -11,52 +11,36 @@ import Account from './sections/account'
 
 const App = () => {
   const [appLoading, setAppLoading] = useState(true)
-  const [cart, setCart] = useState([]) // Global Cart State
+  const [cart, setCart] = useState([]) 
   const location = useLocation()
 
-  // Logic: Adding product with a unique cartId to handle multiple same items
   const addToCart = (product) => {
     setCart((prev) => [...prev, { ...product, cartId: Date.now() }]);
   };
 
-  // Logic: Removing specific item by its unique cartId
   const removeFromCart = (cartId) => {
     setCart((prev) => prev.filter(item => item.cartId !== cartId));
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setAppLoading(false)
-    }, 2000)
-
+    const timer = setTimeout(() => setAppLoading(false), 2000)
     return () => clearTimeout(timer)
   }, [])
 
   return (
-    <div className="bg-[#b7b2ad] min-h-screen transition-colors duration-500">
+    <div className="bg-[#b7b2ad] min-h-screen">
       <AnimatePresence mode="wait">
         {appLoading && <Loader key="loader" />}
       </AnimatePresence>
 
       {!appLoading && (
         <>
-          {/* Pass cart length to Navbar for the counter */}
           <Navbar cartCount={cart.length} />
-          
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path='/' element={<Home />} />
-              
-              {/* Pass the functions down to the specific pages */}
-              <Route 
-                path="/cart" 
-                element={<CartPage cart={cart} removeFromCart={removeFromCart} />} 
-              />
-              <Route 
-                path="/flavors" 
-                element={<Flavors addToCart={addToCart} />} 
-              />
-              
+              <Route path="/cart" element={<CartPage cart={cart} removeFromCart={removeFromCart} />} />
+              <Route path="/flavors" element={<Flavors addToCart={addToCart} />} />
               <Route path="/about" element={<About />} />
               <Route path="/account" element={<Account />} />
             </Routes>
