@@ -29,7 +29,7 @@ const CartPage = ({ cart, removeFromCart }) => {
                       <button onClick={() => removeFromCart(item.cartId)} className="text-[9px] text-red-900 font-bold uppercase mt-2 hover:underline tracking-widest">[ Remove ]</button>
                     </div>
                   </div>
-                  <span className="font-bold text-lg text-black/80">${item.price}.00</span>
+                  <span className="font-bold text-lg text-black/80">Rs.{item.price}.00</span>
                 </motion.div>
               ))}
 
