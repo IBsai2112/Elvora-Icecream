@@ -8,10 +8,10 @@ const Flavors = ({ addToCart }) => {
       id: "scoops",
       label: "Scoop Collection",
       products: [
-        { id: 1, name: "Velvet Chocolate", price: 12, img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=400" },
-        { id: 2, name: "Sicilian Pistachio", price: 14, img: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=400" },
-        { id: 3, name: "Wild Berry Swirl", price: 11, img: "https://images.unsplash.com/photo-1557142046-c704a3adf364?q=80&w=400" },
-        { id: 4, name: "Madagascar Gold", price: 13, img: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=400" },
+        { id: 1, name: "Velvet Chocolate", price: 12, img: "/Ice-creams/ice0.jpeg" },
+        { id: 2, name: "Sicilian Pistachio", price: 14, img: "/Ice-creams/ice1.jpeg" },
+        { id: 3, name: "Wild Berry Swirl", price: 11, img: "/Ice-creams/ice2.jpeg" },
+        { id: 4, name: "Madagascar Gold", price: 13, img: "/Ice-creams/ice3.jpeg" },
       ]
     }
   ];
