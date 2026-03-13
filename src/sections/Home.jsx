@@ -5,7 +5,7 @@ import Navbar from '../components/navbar';
 const home = () => {
   return (
     <div>
-        <div className='h-screen w-screen bg-red-500'>
+        <div className='h-screen w-screen'>
             <CoverVideo />
             <Navbar />
         </div>

@@ -36,7 +36,7 @@ const CartPage = ({ cart, removeFromCart }) => {
               <div className="mt-16 flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t-2 border-black/20">
                 <div>
                   <p className="text-black/40 uppercase text-[10px] tracking-[0.4em] mb-2">Total Amount</p>
-                  <h2 className="text-6xl font-light text-black/90">${total}.00</h2>
+                  <h2 className="text-6xl font-light text-black/90">Rs.{total}.00</h2>
                 </div>
                 <button className="bg-black text-white px-16 py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-white hover:text-black transition-all border border-black shadow-2xl active:scale-95">Checkout Now</button>
               </div>
