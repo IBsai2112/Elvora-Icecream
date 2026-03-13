@@ -5,8 +5,8 @@ const AccountPage = () => {
   // Mock data for a basic account view
   const user = {
     name: "Sainjal",
-    email: "sainjal@elvora.in",
-    memberSince: "March 2026",
+    email: "sai21@elvora.in",
+    memberSince: "January 2026",
   };
 
   const recentOrders = [
