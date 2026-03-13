@@ -3,15 +3,45 @@ import { motion, AnimatePresence } from "framer-motion";
 import { flavorData } from "../assets/assets.js";
 
 const Flavors = ({ addToCart }) => {
-  // Set the first category as default
   const [activeCategory, setActiveCategory] = useState(flavorData[0]);
+  
+  // New State for the Feedback Popup
+  const [popup, setPopup] = useState({ visible: false, productName: "" });
+
+  const handleAddClick = (product) => {
+    addToCart(product);
+    
+    // Show popup with the product name
+    setPopup({ visible: true, productName: product.name });
+
+    // Auto-hide after 2 seconds
+    setTimeout(() => {
+      setPopup({ visible: false, productName: "" });
+    }, 2000);
+  };
 
   return (
     <motion.div 
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
-      className="min-h-screen bg-[#b7b2ad] pt-32 pb-20 px-8 md:px-20"
+      className="min-h-screen bg-[#b7b2ad] pt-32 pb-20 px-8 md:px-20 relative"
     >
+      {/* --- FEEDBACK POPUP --- */}
+      <AnimatePresence>
+        {popup.visible && (
+          <motion.div
+            initial={{ y: -50, opacity: 0, x: "-50%" }}
+            animate={{ y: 20, opacity: 1, x: "-50%" }}
+            exit={{ y: -50, opacity: 0, x: "-50%" }}
+            className="fixed top-20 left-1/2 z-[100] bg-black text-white px-8 py-3 rounded-full shadow-2xl border border-white/10"
+          >
+            <p className="text-[10px] uppercase tracking-[0.3em] font-bold whitespace-nowrap">
+              {popup.productName} Added to Bag
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="max-w-6xl mx-auto">
         
         {/* LUXURY CATEGORY NAV */}
@@ -64,11 +94,11 @@ const Flavors = ({ addToCart }) => {
                     {product.name}
                   </h3>
                   <p className="text-black/50 text-xs font-light tracking-wide">
-                    Hand-crafted Premium — Rs.{product.price}.00
+                    Hand-crafted Premium — ₹{product.price}.00
                   </p>
                   
                   <button 
-                    onClick={() => addToCart(product)}
+                    onClick={() => handleAddClick(product)} // Updated function call
                     className="text-[9px] uppercase tracking-[0.2em] bg-black text-white px-6 py-2.5 mt-4 hover:bg-white hover:text-black transition-all border border-black active:scale-95 shadow-lg shadow-black/10"
                   >
                     Add to Bag

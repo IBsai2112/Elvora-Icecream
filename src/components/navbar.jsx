@@ -15,22 +15,22 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-sm uppercase">
-          <li className="cursor-pointer hover:opacity-70 transition">
+          <li className="cursor-pointer hover:opacity-50 transition">
             <Link to="/">Home</Link>
           </li>
-          <li className="cursor-pointer hover:opacity-70 transition">
+          <li className="cursor-pointer hover:opacity-50 transition">
             <Link to="/Flavors">Flavors</Link>
           </li>
 
           {/* 2. CHANGE THIS TO A LINK */}
-          <li className="cursor-pointer hover:text-pink-400 transition font-bold">
+          <li className="cursor-pointer hover:text-black hover:font-bold transition">
             <Link to="/cart">Cart</Link>
           </li>
           
-          <li className="cursor-pointer hover:opacity-70 transition">
+          <li className="cursor-pointer hover:opacity-50 transition">
             <Link to="/About">About</Link>
           </li>
-          <li className="cursor-pointer hover:opacity-70 transition">
+          <li className="cursor-pointer hover:opacity-50 transition">
             <Link to="/Account">Account</Link>
           </li>
         </ul>
