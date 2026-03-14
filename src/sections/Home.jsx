@@ -1,16 +1,20 @@
 import React from 'react'
 import CoverVideo from '../components/coverVideo';
 import Navbar from '../components/navbar';
+import Trending from '../sections/Trending';
+import Trending2 from '../sections/Trending2';
+import Footer from '../sections/Footer';
 
-const home = () => {
+const Home = () => {
   return (
-    <div>
-        <div className='h-screen w-screen'>
-            <CoverVideo />
-            <Navbar />
-        </div>
+    <div className='bg-[#b7b2ad]'>
+        <Navbar />
+        <CoverVideo />
+        <Trending />
+        <Trending2 />
+        <Footer />
     </div>
   )
 }
 
-export default home;
+export default Home;
