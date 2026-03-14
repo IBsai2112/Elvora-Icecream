@@ -3,6 +3,7 @@ import CoverVideo from '../components/coverVideo';
 import Navbar from '../components/navbar';
 import Trending from '../sections/Trending';
 import Trending2 from '../sections/Trending2';
+import Footer from '../sections/Footer';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <CoverVideo />
         <Trending />
         <Trending2 />
+        <Footer />
     </div>
   )
 }
