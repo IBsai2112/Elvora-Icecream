@@ -6,7 +6,7 @@ import Loader from "./components/Loader"
 import CartPage from './sections/cart'
 import Navbar from './components/navbar'
 import Flavors from './sections/flavors'
-import About from './sections/about'
+import About from './sections/About'
 import Account from './sections/account'
 
 const App = () => {
