@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
-import Home from './sections/home'
+import Home from './sections/Home'
 import Loader from "./components/Loader"
 import CartPage from './sections/cart'
 import Navbar from './components/navbar'
 import Flavors from './sections/flavors'
-import About from './sections/about'
+import About from './sections/About'
 import Account from './sections/account'
 
 const App = () => {
