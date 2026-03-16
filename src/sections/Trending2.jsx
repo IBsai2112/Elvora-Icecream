@@ -58,7 +58,7 @@ const Trending2 = () => {
             className="absolute -bottom-8 -left-8 bg-black text-white p-8 rounded-full shadow-2xl"
           >
             <p className="text-[10px] font-black uppercase tracking-widest leading-tight text-center">
-              Sainjal <br /> <span className="opacity-50">Edition</span>
+              best<br /> <span className="opacity-50">seller</span>
             </p>
           </motion.div>
         </motion.div>

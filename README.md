@@ -9,8 +9,13 @@ This project focuses on smooth animations, elegant typography, and a premium vis
 ### 📸 Project Preview
 <p align="center">
   <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/abfd1670c3d0f46672b20e3f886ef512209981d5/public/ElvoraHomePageImage.png?raw=true" width="32%" />
-  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/7640e3a7beec5aba4ddc1503abb4204bb417c9e6/public/ElvoraCartPagePreview.png?raw=true" width="32%" />
-  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/7640e3a7beec5aba4ddc1503abb4204bb417c9e6/public/ElvoraFlavorsPagePreview.png?raw=true" width="32%" />
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraFlavorsPagePreview.png" width="32%" />
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraCartPagePreview.png" width="32%" />
+</p>
+<p align="center">
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraProfilePageImage.png" width="32%" />
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraAboutPagePreview.png" width="32%" />
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraTrendingPageImage.png" width="32%" />
 </p>
 
 ---
