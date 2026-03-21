@@ -13,10 +13,10 @@ const Footer = () => {
           transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           className="flex gap-20 text-[6rem] font-black italic tracking-tighter text-white uppercase leading-none"
         >
-          <span>Sustainable Selection</span>
-          <span>Artisanal Roast</span>
+          <span>Small-Batch Churn</span>
+          <span>Botanical Infusions</span>
           <span>Limited 2026</span>
-          <span>Sainjal Studio</span>
+          <span>Sainjal Atelier</span>
         </motion.div>
       </div>
 
