@@ -83,7 +83,8 @@ const Flavors = ({ addToCart }) => {
                 <div className="w-32 h-32 overflow-hidden rounded-2xl bg-black/5 flex-shrink-0 shadow-sm border border-black/5">
                   <img 
                     src={product.img} 
-                    className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110" 
+                    className="w-full h-full object-cover mix-blend-multiply opacity-90 transition-all duration-700 
+                              group-hover:opacity-100 group-hover:scale-110 group-hover:mix-blend-normal" 
                     alt={product.name}
                   />
                 </div>
