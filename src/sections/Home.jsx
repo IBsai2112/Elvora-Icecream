@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className='bg-[#b7b2ad]'>
+    <div className='bg-[#b7b2ad] w-full overflow-x-hidden relative'>
         <Navbar />
         <CoverVideo />
         <Trending />

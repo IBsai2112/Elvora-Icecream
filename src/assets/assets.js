@@ -6,7 +6,8 @@ import ice4 from './ice4.jpeg';
 import ice5 from './ice5.jpeg';    
 import ice6 from './ice6.jpeg';
 import ice7 from './ice7.jpeg';
-import ice8 from './ice8.jpeg';
+
+import Tred from './TRED.jpg';
 
 import caramel1 from './caramel1.jpeg';
 import caramel2 from './caramel2.jpeg';
@@ -67,3 +68,8 @@ export const flavorData = [
     ]
   }
 ];
+
+export const TrendingIceImage = {
+  id: "Trend",
+  img: Tred 
+};

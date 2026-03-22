@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TrendingIceImage } from "../assets/assets.js";
 
 const Trending = () => {
   return (
@@ -17,9 +18,9 @@ const Trending = () => {
             Collection 2026 / By Sainjal
           </h2>
           <h1 className="text-white text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black italic leading-[0.85] sm:leading-[0.8] tracking-tighter">
-            VELVET <br /> 
+            THE MIDNIGHT <br /> 
             <span className="text-outline-white text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>
-              NOIR.
+              SCOOP.
             </span>
           </h1>
           
@@ -56,9 +57,11 @@ const Trending = () => {
             <motion.img 
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 1.5 }}
-              src="https://i.pinimg.com/736x/f0/cc/41/f0cc4116ba59e77edcfe03a2abcf5184.jpg" 
+
+             src={TrendingIceImage.img}
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
-              alt="Velvet Noir" 
+              alt="Most saleable ice cream flavor" 
+
             />
           </div>
 

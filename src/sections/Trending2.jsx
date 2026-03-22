@@ -21,7 +21,7 @@ const Trending2 = () => {
               Our Heritage
             </h2>
             <h3 className="text-5xl sm:text-6xl lg:text-7xl font-black italic uppercase tracking-tighter text-[#2c1e1a] leading-[0.9] lg:leading-[0.85]">
-              Artisan <br className="hidden sm:block" /> Churning.
+              ELVORA<br className="hidden sm:block" /> ATELIER.
             </h3>
           </div>
           
