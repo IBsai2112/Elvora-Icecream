@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Trending2Image } from "../assets/assets.js";
 
 const Trending2 = () => {
   return (
@@ -51,7 +52,7 @@ const Trending2 = () => {
         >
           <div className="aspect-[4/5] w-full max-w-[350px] sm:max-w-[450px] mx-auto rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden border-[8px] sm:border-[12px] border-white/40 shadow-2xl">
             <img 
-              src="https://i.pinimg.com/1200x/dd/0c/69/dd0c69b564494d9f97737f2e278c75d1.jpg" 
+              src={Trending2Image.img}
               className="w-full h-full object-cover" 
               alt="Craft" 
             />
