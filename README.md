@@ -15,7 +15,7 @@ This project focuses on smooth animations, elegant typography, and a premium vis
 <p align="center">
   <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraProfilePageImage.png" width="32%" />
   <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraAboutPagePreview.png" width="32%" />
-  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/3f9edf77988e5dd251371998b357d7a8fe66133a/public/ElvoraTrendingPageImage.png" width="32%" />
+  <img src="https://github.com/IBsai2112/Elvora-Icecream/blob/02a4cc9cf98171d7bdd230b8a1502a685379d551/public/ElvoraTrendingPageImage.png" width="32%" />
 </p>
 
 ---
