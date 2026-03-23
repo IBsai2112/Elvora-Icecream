@@ -6,7 +6,7 @@ import ice4 from './ice4.jpeg';
 import ice5 from './ice5.jpeg';    
 import ice6 from './ice6.jpeg';
 
-
+//updated file for beeter to know on github 
 
 import Tred from './TRED.jpg';
 
