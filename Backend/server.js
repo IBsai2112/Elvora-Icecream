@@ -2,26 +2,28 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import 'dotenv/config';
+import flavorRouter from './routes/flavorRoute.js';
 
-// App Config
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // Middleware
-app.use(express.json()); // Parses incoming JSON
-app.use(cors());         // Allows Frontend (Port 5173) to talk to Backend (Port 4000)
+app.use(express.json()); 
+app.use(cors());         
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log("✅ Elvora Database Connected"))
-    .catch((err) => console.log("❌ DB Error:", err));
+    .then(() => console.log("✅ Successfully connected to Elvora Local DB"))
+    .catch((err) => console.log("❌ MongoDB Connection Error:", err));
 
 // API Routes
+app.use("/api/flavor", flavorRouter);
+app.use("/images", express.static('uploads')); // Makes uploaded images accessible via URL
+
 app.get("/", (req, res) => {
-    res.send("Elvora API is Live");
+    res.send("Elvora Backend is Running");
 });
 
-// Start Server
 app.listen(port, () => {
-    console.log(`🚀 Server running on http://localhost:${port}`);
+    console.log(`🚀 Server started on http://localhost:${port}`);
 });

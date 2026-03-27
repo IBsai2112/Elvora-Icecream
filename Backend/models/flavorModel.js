@@ -4,12 +4,11 @@ const flavorSchema = new mongoose.Schema({
     name: { type: String, required: true },
     description: { type: String, required: true },
     price: { type: Number, required: true },
-    image: { type: String, required: true }, // We will store the image filename/URL
-    category: { type: String, required: true },
-    isTrending: { type: Boolean, default: false }
+    image: { type: String, required: true },
+    category: { type: String, required: true }
 });
 
-// If the model already exists, use it; otherwise, create it.
-const flavorModel = mongoose.models.flavor || mongoose.model("flavor", flavorSchema);
+// The third argument "flavorsvv" forces Mongoose to use your exact collection
+const flavorModel = mongoose.models.flavor || mongoose.model("flavor", flavorSchema, "flavorsvv");
 
 export default flavorModel;

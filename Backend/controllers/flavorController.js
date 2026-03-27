@@ -1,34 +1,36 @@
 import flavorModel from "../models/flavorModel.js";
+import fs from 'fs';
 
-// Add a new ice cream flavor
+// Add Flavor Logic
 const addFlavor = async (req, res) => {
-    const { name, description, price, category, image } = req.body;
+    // req.file comes from Multer middleware
+    let image_filename = `${req.file.filename}`;
 
-    const newFlavor = new flavorModel({
-        name,
-        description,
-        price,
-        category,
-        image
+    const flavor = new flavorModel({
+        name: req.body.name,
+        description: req.body.description,
+        price: req.body.price,
+        category: req.body.category,
+        image: image_filename
     });
 
     try {
-        await newFlavor.save();
-        res.json({ success: true, message: "Flavor Added Successfully" });
+        await flavor.save();
+        res.json({ success: true, message: "Flavor Added to Elvora DB" });
     } catch (error) {
         console.log(error);
         res.json({ success: false, message: "Error adding flavor" });
     }
 };
 
-// List all flavors
+// List All Flavors
 const listFlavors = async (req, res) => {
     try {
         const flavors = await flavorModel.find({});
         res.json({ success: true, data: flavors });
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error fetching flavors" });
+        res.json({ success: false, message: "Error fetching list" });
     }
 };
 
