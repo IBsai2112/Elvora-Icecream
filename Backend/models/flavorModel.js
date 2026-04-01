@@ -1,14 +1,13 @@
 import mongoose from "mongoose";
 
-const flavorSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    description: { type: String, required: true },
-    price: { type: Number, required: true },
-    image: { type: String, required: true },
-    category: { type: String, required: true }
-});
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    cartData: { type: Object, default: {} } 
+}, { minimize: false });
 
-// The third argument "flavorsvv" forces Mongoose to use your exact collection
-const flavorModel = mongoose.models.flavor || mongoose.model("flavor", flavorSchema, "flavorsvv");
+// This will create a collection named 'users' in your Elvora DB
+const userModel = mongoose.models.user || mongoose.model("user", userSchema);
 
-export default flavorModel;
+export default userModel;
