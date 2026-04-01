@@ -1,9 +1,9 @@
 import flavorModel from "../models/flavorModel.js";
 import fs from 'fs';
 
-// Add Flavor Logic
+// --- ADD NEW FLAVOR ---
 const addFlavor = async (req, res) => {
-    // req.file comes from Multer middleware
+    // req.file is provided by the Multer middleware in the route
     let image_filename = `${req.file.filename}`;
 
     const flavor = new flavorModel({
@@ -23,7 +23,7 @@ const addFlavor = async (req, res) => {
     }
 };
 
-// List All Flavors
+// --- LIST ALL FLAVORS ---
 const listFlavors = async (req, res) => {
     try {
         const flavors = await flavorModel.find({});
@@ -34,4 +34,27 @@ const listFlavors = async (req, res) => {
     }
 };
 
-export { addFlavor, listFlavors };
+// --- REMOVE FLAVOR ---
+const removeFlavor = async (req, res) => {
+    try {
+        // 1. Find the flavor to get the image filename
+        const flavor = await flavorModel.findById(req.body.id);
+        
+        // 2. Delete the physical image file from the 'uploads' folder
+        if (flavor.image) {
+            fs.unlink(`uploads/${flavor.image}`, (err) => {
+                if (err) console.log("File deletion error:", err);
+            });
+        }
+
+        // 3. Delete the data from MongoDB
+        await flavorModel.findByIdAndDelete(req.body.id);
+        
+        res.json({ success: true, message: "Flavor Removed Successfully" });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: "Error removing flavor" });
+    }
+};
+
+export { addFlavor, listFlavors, removeFlavor };
