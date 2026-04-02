@@ -15,9 +15,6 @@ const Home = () => {
         <Trending />
         <Trending2 />
         <Footer />
-
-        {/* <Sign_in />
-        <Sign_up /> */}
     </div>
   )
 }
