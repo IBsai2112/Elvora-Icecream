@@ -1,8 +1,30 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
-const CartPage = ({ cart, removeFromCart }) => {
+const CartPage = ({ cart, removeFromCart, url }) => {
+  const navigate = useNavigate();
   const total = cart.reduce((acc, item) => acc + item.price, 0);
+
+  // Function to handle checkout connection
+  const handleCheckout = () => {
+    const token = localStorage.getItem("token");
+    
+    if (!token) {
+      alert("Please sign in to place an order.");
+      navigate("/signin");
+      return;
+    }
+
+    if (cart.length === 0) {
+      alert("Your bag is empty.");
+      return;
+    }
+
+    // Logic for successful checkout goes here (e.g., redirecting to payment)
+    alert("Proceeding to checkout with Rs." + total);
+    navigate("/account"); 
+  };
 
   return (
     <motion.div 
@@ -23,7 +45,13 @@ const CartPage = ({ cart, removeFromCart }) => {
                   className="flex justify-between items-center border-b border-black/10 pb-6"
                 >
                   <div className="flex items-center gap-6">
-                    <img src={item.img} className="w-20 h-20 object-cover rounded-lg mix-blend-multiply" alt={item.name} />
+                    {/* Updated to use backend image path */}
+                    <img 
+                      src={`${url}/images/${item.image}`} 
+                      className="w-20 h-20 object-cover rounded-lg mix-blend-multiply" 
+                      alt={item.name} 
+                      onError={(e) => { e.target.src = item.img || "https://via.placeholder.com/150" }} 
+                    />
                     <div>
                       <h2 className="text-sm font-bold uppercase tracking-widest text-black/80">{item.name}</h2>
                       <button onClick={() => removeFromCart(item.cartId)} className="text-[9px] text-red-900 font-bold uppercase mt-2 hover:underline tracking-widest">[ Remove ]</button>
@@ -38,7 +66,12 @@ const CartPage = ({ cart, removeFromCart }) => {
                   <p className="text-black/40 uppercase text-[10px] tracking-[0.4em] mb-2">Total Amount</p>
                   <h2 className="text-6xl font-light text-black/90">Rs.{total}.00</h2>
                 </div>
-                <button className="bg-black text-white px-16 py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-white hover:text-black transition-all border border-black shadow-2xl active:scale-95">Checkout Now</button>
+                <button 
+                  onClick={handleCheckout}
+                  className="bg-black text-white px-16 py-6 font-black uppercase text-xs tracking-[0.4em] hover:bg-white hover:text-black transition-all border border-black shadow-2xl active:scale-95"
+                >
+                  Checkout Now
+                </button>
               </div>
             </div>
           )}
