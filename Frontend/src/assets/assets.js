@@ -12,10 +12,10 @@ import Tred from './TRED.jpg';
 
 import Trend2 from './Trending2.jpg';
 
-import caramel1 from './caramel1.jpeg';
-import caramel2 from './caramel2.jpeg';
-import caramel3 from './caramel3.jpeg';
-import caramel4 from './caramel4.jpeg';
+import caramel1 from './Caramel1.jpeg';
+import caramel2 from './Caramel2.jpeg';
+import caramel3 from './Caramel3.jpeg';
+import caramel4 from './Caramel4.jpeg';
 
 import chocolate1 from './choco1.jpeg';
 import chocolate2 from './choco2.jpeg';
